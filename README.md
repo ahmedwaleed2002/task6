@@ -19,6 +19,11 @@ This Node.js CLI application demonstrates the use of **callbacks** to perform as
 node cli.js
 ```
 
+To automatically run the application and push changes to GitHub:
+```bash
+node auto-push.js
+```
+
 ## How It Works
 - **File Read**: Reads `file.txt` asynchronously using `fs.readFile`
 - **Wait**: Simulates waiting using `setTimeout` 
@@ -32,6 +37,22 @@ The code intentionally shows how callback nesting creates the "pyramid of doom" 
 2. Initialize project: `npm init -y`
 3. Create `file.txt` with sample content
 4. Run: `node cli.js`
+
+## Automatic Git Push
+The repository includes an `auto-push.js` script that:
+1. Runs the main application
+2. Automatically stages all changes
+3. Commits with a timestamp message
+4. Pushes to the GitHub repository
+
+This demonstrates how automation can be integrated into the development workflow.
+
+## Git Workflow Used
+- Initial commit: "Initial commit: Set up CLI app with async tasks using callbacks"
+- Task 1: "Add: Read file content asynchronously using callback"
+- Task 2: "Add: Simulate wait with setTimeout() callback"
+- Task 3: "Add: Write log to a file asynchronously using callback"
+- Final version: "Implemented CLI with 3 async tasks using callbacks"
 
 ## What I Learned
 Working with nested callbacks revealed several key insights:
